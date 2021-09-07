@@ -37,11 +37,11 @@
         </tbody>
     </table>
     @else
-    <p>Você ainda não tem eventos, <a href="/events/create">criar evento</a></p>
+    <p>Ainda não tens eventos, <a href="/events/create">criar evento</a></p>
     @endif
 </div>
 <div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Eventos que estou participando</h1>
+    <h1>Eventos que estou a participar</h1>
 </div>
 <div class="col-md-10 offset-md-1 dashboard-events-container">
 @if(count($eventsasparticipant) > 0)
@@ -75,7 +75,7 @@
     </tbody>
 </table>
 @else
-<p>Você ainda não está participando de nenhum evento, <a href="/">veja todos os eventos</a></p>
+<p>Ainda não estás a participar de nenhum evento, <a href="/">vejas todos os eventos</a></p>
 @endif
 </div>
 @endsection

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Event;
 use App\Models\User;
+use App\Http\Requests\StoreRequest;
 
 class EventController extends Controller
 {
@@ -32,8 +33,9 @@ class EventController extends Controller
         return view('events.create');
     }
 
-    public function store(Request $request) {
+    public function store(StoreRequest $request) {
 
+        
         $event = new Event;
 
         $event->title = $request->title;
